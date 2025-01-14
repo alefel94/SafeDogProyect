@@ -1,0 +1,445 @@
+:root{
+
+    --bg-color: #FFF8E0;
+    /* Colores primarios */
+        --color-primary: black;
+        --color-secondary: #44A194;
+        --color-tertiary: #F0BB69;
+        --color-cuarto: #7F636E;
+}
+
+body{
+background-color: var(--bg-color);
+display: block;
+
+}
+
+
+
+
+
+
+/*CARD CUIDADORES CARD CUIDADORES CARD CUIDADORES*/
+
+.card-container{
+    margin-bottom: 70px;
+    margin-left: 10px;
+}
+
+
+
+
+/*CARD CUIDADORES CARD CUIDADORES CARD CUIDADORES*/
+
+body{
+    background-color: var(--bg-color);
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8E0;
+    
+    }
+    
+    
+    
+    
+    
+    /*CARD CUIDADORES CARD CUIDADORES CARD CUIDADORES*/
+    
+    /*.card-container{
+        
+    }*/
+    
+    .dropdown1{
+        margin: 30px 0px 30px 30px;
+        font-size: x-large;
+    } 
+    
+    #ciudad{
+        width: 220px;
+        border-radius: 5px;
+        height: 50px;
+    }
+    
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centra el contenido horizontalmente */
+        background-color: var(--bg-color);
+        margin-top: 1.5em;
+        padding: 0 20px;
+        max-width: 100%;
+        max-height: 100%;
+       
+    }
+    
+    #cuidadoresCards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        font-family: var(--font-primary);
+        align-content: center;
+        padding: 0px 20px 20px 20px;
+        max-width: 100%;
+    
+    }
+    
+    .item {
+        border: #FFF8E0 solid;
+        padding: 1.5em 1.5em 0 1.5em;
+        border-radius: 1em;
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        width: 300px;
+        height: 400px;
+        background-color: #F0BB69;
+    }
+    
+    .item:hover {
+        transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+    }
+    
+    .image-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15em;
+        height: 10em;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+    
+    
+    .image-container > img{  
+        width: 100%; /* Ajusta el ancho para llenar el contenedor */
+        height: 100%; /* Ajusta la altura para llenar el contenedor */
+        object-fit: cover; /* Asegura que la imagen cubra el contenedor mientras mantiene la proporción de aspecto */
+        display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
+        border-radius: 0.25em;
+    } 
+    
+    
+    #cuidadoresCards .item a {
+        text-decoration: none; 
+        color: inherit; 
+    }
+    
+    
+    .Nombre{
+        margin-top: 0.50em;
+        font-size: 1em;
+        text-align: left;
+        
+    }
+    
+    .Ciudad{
+        font-size: 0.80em;
+        text-align: left;
+    }
+    
+    .Descripcion{
+        font-family:"Roboto", sans-serif;
+        font-size: 0.75em;
+        margin-top: 1em;
+        text-align: left;
+       
+    }
+    
+    
+    /*listPage*/
+    
+    .pagination{
+        padding: 10px;
+        text-align: center;
+        list-style: none;
+        justify-content: center;
+        
+    }
+    
+    .pagination li{
+        background-color: #1bb1c4bd;
+        display:inline-block;
+        cursor: pointer;
+        
+    
+    
+    
+    }
+    
+    .pagination .page-item{
+        background-color: #F0BB69;
+        border-radius: 10px;
+    
+    }
+    
+    .page-link {
+        color: #705962; /*Color del texto*/
+        background-color: #F0BB69;;
+    }
+    
+    .page-item.active .page-link {
+        background-color: #ffffff; /* Cambia el color de fondo */
+        border-color: #F0BB69; /* Cambia el color del borde */
+        color: #705962; /* Cambia el color del texto */
+    }
+    
+    .page-link:hover {
+        background-color:  #ffffff; /* Cambia el color de fondo al pasar el ratón */
+        color: rgb(0, 0, 0); /* Cambia el color del texto */
+    }
+    
+    
+    @media (max-width: 1024px){
+        #cuidadoresCards{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width: 600px){
+        #cuidadoresCards{
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    /*FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER*/
+    
+    .footer--safeDog{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #44A194;
+        padding: 20px;
+        margin: 0;
+        flex-wrap: wrap;
+        color: #ffffff;
+        text-align: center;
+        
+    }
+    
+    .footer--info{
+        display: flex;
+        flex-direction:column;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        
+    }
+    
+    .footer--info .footer--question{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+        
+    }
+    .footer--info ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+    }
+    
+    .footer--info li{
+        margin: 0;
+    }
+    
+    .footer--info a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    .footer--info .footer--list li a:hover{
+        color: #F0BB69;
+    }
+    
+    .footer--logo{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .footer--logo img{
+        height: 200px;
+        width: 150px;
+    
+    }
+    
+    
+    
+  
+    
+    
+    .footer--copy{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: -10px;
+       
+    }
+    
+    .footer--copy h4{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+     
+      
+    }
+    
+    
+    
+    @media(max-width: 600px){
+        .footer--safeDog{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .footer--logo {
+            margin: 30px 0;
+            text-align: center;
+        }
+    
+        .footer--info ul{
+            align-items: center;
+        }
+    
+        .footer--copy{
+            margin-top: 10px;
+            text-align: center;
+            align-items: center;
+        
+        }
+    }
+    
+    
+    * FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+    .footer--safeDog {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #44A194;
+        padding: 10px; /* Reducido para hacer el footer más compacto */
+        margin: 0;
+        flex-wrap: wrap;
+        color: #ffffff;
+        text-align: center;
+        font-size: 0.8rem; /* Reduce el tamaño de la fuente */
+    }
+    
+    .footer--info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px; /* Reduce el espacio entre los elementos */
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer--info .footer--question {
+        display: flex;
+        flex-direction: column;
+        gap: 5px; /* Reduce el espacio entre los elementos */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 25px; /* Reducido para menos espacio superior */
+    }
+    
+    .footer--info ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px; /* Reduce el espacio entre los elementos */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer--info li {
+        margin: 0;
+    }
+    
+    .footer--info a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 0.9rem; /* Reduce el tamaño de los enlaces */
+    }
+    
+    .footer--info .footer--list li a:hover {
+        color: #F0BB69;
+    }
+    
+    .footer--logo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .footer--logo img {
+        height: 150px; /* Reducido para un tamaño más pequeño */
+        width: 150px; /* Reducido para un tamaño más pequeño */
+        margin-left:200px;
+    }
+    
+    .iconos img {
+        width: 40px; /* Ajusta el tamaño según lo necesites */
+        height: 40px; /* Ajusta el tamaño según lo necesites */
+        object-fit: contain; /* Asegura que la imagen mantenga su proporción */
+    }
+    
+    .iconos .logo--fb {
+        width: 35px; /* Tamaño ajustado */
+        height: 30px; /* Tamaño ajustado */
+    }
+    
+    .iconos .logo--insta {
+        width: 36px; /* Tamaño ajustado */
+        height: 30px; /* Tamaño ajustado */
+    }
+    
+    .footer--copy {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px; /* Reducido para menos espacio */
+        margin-left: 0; /* Ajustado */
+        font-size: 0.8rem; /* Reduce el tamaño de la fuente */
+    }
+    
+    .footer--copy h4 {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px; /* Reducido para menos espacio */
+        font-size: 20px; /* Reduce el tamaño de la fuente */
+    }
+    
+    @media (max-width: 600px) {
+        .footer--safeDog {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .footer--logo {
+            margin: 5px 0; /* Reducido para menos espacio */
+            text-align: center;
+        }
+    
+        .footer--info ul {
+            align-items: center;
+        }
+    
+        .footer--copy {
+            margin-top: 5px; /* Reducido para menos espacio */
+            text-align: center;
+            align-items: center;
+        }
+    }
+    /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
